@@ -1,0 +1,27 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add truffle
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Mutahhir\AppData\Roaming\nvm;C:\Program Files\nodejs;%C:\Program Files\nodejs\%;C:\Users\Mutahhir\AppData\Local\Microsoft\WindowsApps;C:\Users\Mutahhir\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mutahhir\AppData\Roaming\nvm;C:\Program Files\nodejs;%C:\Program Files\nodejs\%;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  12.0.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 13.234.176.102:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1054:14)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

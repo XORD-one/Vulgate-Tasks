@@ -1,0 +1,28 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Mutahhir
+    network: rinkeby
+    source:
+      address: "0xa030a24efb9348632DD17eA11294805BEd482d6C"
+      abi: Mutahhir
+      startBlock: 9823212
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - UserBalance
+      abis:
+        - name: Mutahhir
+          file: ./abis/Mutahhir.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        - event: TransferFrom(indexed address,indexed address,uint256)
+          handler: handleTransferFrom
+      file: ./src/mapping.ts

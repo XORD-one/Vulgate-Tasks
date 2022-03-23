@@ -1,0 +1,43 @@
+specVersion: 0.0.2
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Parent
+    network: rinkeby
+    source:
+      address: "0xC8C5B1C860AFe614facdD0c6AB7Ddc75111810d4"
+      abi: Parent
+      startBlock: 9845432
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - ParentEntity
+      abis:
+        - name: Parent
+          file: Parent\abis\Parent.json
+      eventHandlers:
+        - event: ChildGeneration(string,address,uint256)
+          handler: handleChildGeneration
+      file: Parent\Parent.wasm
+templates:
+  - name: Child
+    kind: ethereum/contract
+    network: rinkeby
+    source:
+      abi: Child
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: templates\Child\Child.wasm
+      entities:
+        - ChildEntity
+      abis:
+        - name: Child
+          file: Child\abis\Child.json
+      eventHandlers:
+        - event: Initialize(address,address,string)
+          handler: handleInitialize

@@ -1,0 +1,12 @@
+type ParentEntity @entity {
+  id: ID!
+  _name: String! # string
+  _parentAddress: Bytes! # address
+  _childNumber: BigInt!
+}
+type ChildEntity @entity {
+  id: ID!
+  _parentAddress: Bytes! # address
+  _childAddress: Bytes! # address
+  _name: String! # string
+}

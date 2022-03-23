@@ -1,0 +1,17 @@
+{
+  "name": "template-method",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "auth": "graph auth",
+    "deploy": "graph deploy",
+    "create-local": "graph create --node http://localhost:8020/ template-method",
+    "remove-local": "graph remove --node http://localhost:8020/ template-method",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 template-method"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.1",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}

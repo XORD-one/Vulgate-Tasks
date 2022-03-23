@@ -1,0 +1,22 @@
+COMMANDS FOR TRUFFLE WEB3
+truffle migrate --network ropsten --reset
+node script.js
+-- truffle refernce: https://morioh.com/p/d3ef8b16c770
+
+COMMANDS FOR HARDHAT ETHERJS
+npx hardhat run --network rinkeby ./scripts/deploy.js
+
+COMMANDS FOR SIGN-MESSAGE
+truffle compile
+truffle migrate --network ropsten --reset
+node scripts/script.js
+
+SUBGRAPH
+https://thegraph.com/docs/studio/subgraph-studio
+
+yarn global add @graphprotocol/graph-cli
+graph init --studio <SUBGRAPH_NAME>
+graph codegen
+graph build
+graph auth --studio <DEPLOY_KEY>
+graph deploy --studio <SUBGRAPH_NAME>

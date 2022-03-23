@@ -1,0 +1,5 @@
+LICENSE
+node_modules
+.env
+.env.local
+ERC721Hardhat/node_modules

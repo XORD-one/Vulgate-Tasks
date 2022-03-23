@@ -1,0 +1,77 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "8fe3697280c7ac149959be2d4ee586975d94d82642af71e4896e7f260702e8ab": {
+      "address": "0xB26Ec11FaeCf1376A4C6069271144e39d6AC7E46",
+      "txHash": "0x994980fc5b752249a975567a0163c724d15b951a11a776ca211b1d06374d07e8",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "GreeterUpgrade",
+            "label": "greeting",
+            "type": "t_string_storage",
+            "src": "contracts/Greeter_Upgradable.sol:10"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "ea7051b90475505bfff8a14560deeab0ed24df0cfee6d4f0c98c0b484c454299": {
+      "address": "0x391944f15A7aCB8C370AdDd79F66844c99e328b4",
+      "txHash": "0xfb2fd28e4353261fcd532d65179b020d5b21470a1a08499196895a0de8ce082a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "GreeterUpgrade",
+            "label": "greeting",
+            "type": "t_string_storage",
+            "src": "contracts/Greeter_Upgradable.sol:10"
+          }
+        ],
+        "types": {
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0xF9583D668613a41c193D16208224F5Dbc5bF160b",
+    "txHash": "0xb843aadb80314c12a239e57841d57ee8c0b8847db4fdfcc5fbd506f2496e3db4"
+  }
+}

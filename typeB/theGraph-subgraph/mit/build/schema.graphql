@@ -1,0 +1,8 @@
+type UserBalance @entity {
+  id: ID!
+  count: BigInt!
+  from: Bytes! # address
+  to: Bytes! # address
+  value: BigInt!
+  senderBalance: BigInt!
+}
